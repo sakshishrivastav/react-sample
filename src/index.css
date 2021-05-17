@@ -1,0 +1,126 @@
+.App{
+  height: 100vh;
+}
+
+@media (min-width: 992px) { 
+  .profile-info{
+    min-width: 155px;
+  }
+  .main-container{
+    height: 100%;
+  }
+ }
+
+ @media (max-width: 991px){
+  #taskPage {
+    flex-wrap: wrap;
+  }
+ }
+
+.bg-green{
+  background-color: #27AE60;
+}
+
+.bg-blue {
+  background-color: #2F80ED;
+}
+
+.bg-yellow{
+  background-color: #F2C94C
+}
+
+.bg-light-grey{
+  background-color: #f2f2f2;
+}
+
+.custom-input{
+  background-color: #F2F2F2;
+}
+
+.custom-input input{
+  background-color: #F2F2F2;
+  border: 0;
+  outline: 0;
+}
+.input-group-text{
+  color: #A6A6A6;
+  border: 0;
+  background-color: transparent;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 0.08rem rgb(13 110 253 / 25%);
+  background-color: transparent;
+}
+
+.task-container {
+  background-color: #F8F8F9;
+  height: 100%;
+}
+
+.task-container>.card-body{
+  min-height: 250px;
+}
+
+.task-container .task{
+  height: 150px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.task-container .truncated{
+  max-height: 95px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  position: relative;
+}
+
+.task-container .truncated::before {
+  position: absolute;
+  content: "...";
+  bottom: 0;
+  right: 0;
+}
+.task-container .truncated::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+}
+
+.task-container .task:hover{
+  border: 2px solid #2F80ED;
+}
+
+.main-menu{
+  width: 298px;
+  border-right: 2px solid #27AE60;
+}
+.profile-icon img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.mobile-menu .right-nav>div{
+  padding: 10px;
+}
+.mobile-menu .profile-icon img{
+  padding: 5px;
+  margin-left: 10px;
+}
+.mobile-menu .nav .nav-link{
+  color: white;
+}
+.border-bottom.darker{
+  border-bottom: 2px solid #dee2e6 !important;
+}
+.p-40{
+  padding: 40px;
+}
+
+#createTask form .form-group{
+  padding-bottom: 30px;
+}
+#createTask form .form-group .form-control{
+  background-color: #F2F2F2;
+}
